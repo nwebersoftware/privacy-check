@@ -1,0 +1,23 @@
+{
+  "name": "@njweber/privacy-check",
+  "version": "0.1.0",
+  "description": "Check which privacy-sensitive iOS APIs an app uses and whether every required usage-description key is declared — dependency-free.",
+  "type": "module",
+  "bin": {
+    "privacy-check": "bin/privacy-check.mjs"
+  },
+  "files": ["bin", "src", "README.md", "LICENSE"],
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": ["ios", "app-store", "privacy", "info-plist", "usage-description", "react-native", "expo", "release", "submission"],
+  "repository": { "type": "git", "url": "git+https://github.com/nwebersoftware/privacy-check.git" },
+  "homepage": "https://github.com/nwebersoftware/privacy-check#readme",
+  "bugs": { "url": "https://github.com/nwebersoftware/privacy-check/issues" },
+  "author": "Boolean Build (a Boolean Bros project)",
+  "license": "MIT",
+  "engines": { "node": ">=18" },
+  "dependencies": {
+    "@njweber/ipa-check": "^0.1.0"
+  }
+}

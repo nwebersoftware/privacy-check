@@ -1,0 +1,18 @@
+name: privacy-check
+description: Catch missing iOS privacy usage descriptions before App Store review does.
+branding:
+  icon: shield
+  color: red
+
+inputs:
+  path:
+    description: Path to the .ipa (or a directory containing one).
+    required: true
+
+runs:
+  using: composite
+  steps:
+    - shell: bash
+      run: |
+        npm install --prefix "${{ github.action_path }}" --no-audit --no-fund --silent
+        node "${{ github.action_path }}/bin/privacy-check.mjs" ${{ inputs.path }}
