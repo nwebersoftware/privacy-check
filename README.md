@@ -1,5 +1,8 @@
 # privacy-check
 
+[![npm](https://img.shields.io/npm/v/%40njweber%2Fprivacy-check)](https://www.npmjs.com/package/@njweber/privacy-check) [![downloads](https://img.shields.io/npm/dm/%40njweber%2Fprivacy-check)](https://www.npmjs.com/package/@njweber/privacy-check) [![CI](https://github.com/nwebersoftware/privacy-check/actions/workflows/ci.yml/badge.svg)](https://github.com/nwebersoftware/privacy-check/actions/workflows/ci.yml)
+
+
 **Catch a missing iOS privacy usage description before App Store review does.** `privacy-check` scans
 the app binary for privacy-sensitive APIs, then checks that every required `Info.plist` key is
 declared.
